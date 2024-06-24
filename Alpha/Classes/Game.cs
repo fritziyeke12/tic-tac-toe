@@ -22,5 +22,10 @@ namespace Alpha.Classes
                 Console.WriteLine("");
             }
         }
+
+        public void Over()
+        {
+
+        }
     }
 }

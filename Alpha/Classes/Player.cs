@@ -8,6 +8,21 @@ namespace Alpha.Classes
 {
     internal class Player
     {
-        public char Team;
+        public string Name { get; set; }
+        public char Team { get; set; }
+        public bool Victor = false;
+        public int[] PlayerMove = new int[2];
+        public bool IsTurn = false;
+
+        public Player()
+        {
+            Name = "Player";
+        }
+
+        public void MakeMove()
+        {
+
+        }
+        
     }
 }

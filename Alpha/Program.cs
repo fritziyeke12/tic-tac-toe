@@ -6,7 +6,8 @@ namespace Alpha
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            int[] ints = new int[] { 1, 2 };
+            Console.WriteLine($"[{ints[0]},{ints[1]}]");
             
         }
     }
