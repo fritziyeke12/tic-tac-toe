@@ -8,5 +8,6 @@ namespace Alpha.Classes
 {
     internal class Player
     {
+        public char Team;
     }
 }
