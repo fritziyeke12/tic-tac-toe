@@ -8,7 +8,7 @@ namespace Alpha.Classes
 {
     internal class GameMaster
     {
-        public Game Game = new Game();
+        //public Game Game = new Game();
         public bool Play;
         public string Instructions = "The usual rules for noughts and crosses, I'm sure you know them!";
 
@@ -46,11 +46,11 @@ namespace Alpha.Classes
         {
             if (player1.Victor)
             {
-                Game.Over();
+                //Game.Over();
             }
             else if (player2.Victor)
             {
-                Game.Over();
+                //Game.Over();
             }
         }
     }

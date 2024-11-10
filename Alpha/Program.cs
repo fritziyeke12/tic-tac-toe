@@ -6,9 +6,23 @@ namespace Alpha
     {
         static void Main(string[] args)
         {
-            int[] ints = new int[] { 1, 2 };
-            Console.WriteLine($"[{ints[0]},{ints[1]}]");
-            
+            Console.WriteLine("Player 1 enter your name: ");
+            string p1Name = Console.ReadLine();
+
+            Console.WriteLine("Player 2 enter your name: ");
+            string p2Name = Console.ReadLine();
+
+            Game game = new Game(p1Name, p2Name, 'X', 'O');
+
+            game.Start();
+
+            while (game.gameOn)
+            {
+                game.NewRound();
+                //game.CheckGame();
+            }
+
+            game.Over();
         }
     }
 }

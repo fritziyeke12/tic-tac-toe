@@ -13,10 +13,12 @@ namespace Alpha.Classes
         public bool Victor = false;
         public int[] PlayerMove = new int[2];
         public bool IsTurn = false;
+        public int[] score = new int[2];
 
-        public Player()
+        public Player(string playerName, char team)
         {
-            Name = "Player";
+            this.Name = playerName;
+            this.Team = team;
         }
 
         public void MakeMove()
